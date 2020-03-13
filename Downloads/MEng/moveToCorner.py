@@ -393,7 +393,7 @@ try:
                     #this implies we need to do a 180 turn and then wander
                     #the time that is considered "too long" can be modified
                     print("Time spent in turn: "+str(endTime-startTime))
-                    if(endTime - startTime > 4):
+                    if(endTime - startTime > 3.9):
                         #stop, turn 180, wander
                         print("In end condition because of turn duration. Return to wandering and polling")
                         ser.write('\x92\x00\x00\x00\x00')
@@ -433,7 +433,7 @@ try:
 
                     print("Time spent in turn: "+str(endTime-startTime))
                     
-                    if(endTime - startTime > 4):
+                    if(endTime - startTime > 3.9):
                         #stop, turn 180, wander
                         print("In end condition b/c of timing. Return to wandering and polling")
                         ser.write('\x92\x00\x00\x00\x00')
