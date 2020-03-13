@@ -418,7 +418,7 @@ try:
                     align()
                  
 
-                # turn CCW under table
+                # turn CCW
                 else: 
                     print('In counter clockwise turn')
                     #print("moving right wheels but not left wheels")
