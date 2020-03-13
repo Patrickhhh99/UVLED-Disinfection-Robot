@@ -418,8 +418,8 @@ try:
                     align()
                  
 
-                # turn CCW     
-                else:
+                # turn CCW under table
+                else: 
                     print('In counter clockwise turn')
                     #print("moving right wheels but not left wheels")
                     ser.write('\x92\x00\x8F\x00\x00') #right wheel moves and left doesn't
